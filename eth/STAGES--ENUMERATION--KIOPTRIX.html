@@ -1,0 +1,39 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>KIOPTRIX</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong><a href="index.html">Index</a></strong></p>
+<p><a href="KALI.html">KALI </a></p>
+
+<ol>
+<li><a href="KALI--LINUX_COMMANDS.html">LINUX COMMANDS</a></li>
+<li><a href="KALI--NETWORK_COMMANDS.html">NETWORK COMMANDS</a></li>
+<li><a href="KALI--PYTHON_BASICS.html">PYTHON BASICS</a></li>
+</ol>
+<p><a href="STAGES.html">STAGES</a></p>
+
+<ol>
+<li><a href="STAGES--RECONNAISSANCE.html">RECONNAISSANCE</a></li>
+<li><a href="STAGES--SCANNING_TOOLS.html">SCANNING TOOLS</a></li>
+<li><a href="STAGES--ENUMERATION.html">ENUMERATION</a></li>
+<ol>
+<li><a href="STAGES--ENUMERATION--KIOPTRIX.html">KIOPTRIX</a></li>
+<ol>
+<li><a href="STAGES--ENUMERATION--KIOPTRIX--VULN.html">VULN</a></li>
+<ol>
+<li><a href="STAGES--ENUMERATION--KIOPTRIX--VULN--Default_webpage(low).html">Default_webpage(low)</a></li>
+<li><a href="STAGES--ENUMERATION--KIOPTRIX--VULN--Server_header_info_desclosure(low).html">Server_header info desclosure(low)</a></li>
+<li><a href="STAGES--ENUMERATION--KIOPTRIX--VULN--Default404_infodisclosure.html">Default404_infodisclosure</a></li>
+<li><a href="STAGES--ENUMERATION--KIOPTRIX--VULN--Weak_Ciphers.html">Weak Ciphers</a></li>
+<li><a href="STAGES--ENUMERATION--KIOPTRIX--VULN--smb_findings.html">smb_findings</a></li>
+</ol>
+</ol>
+</ol>
+<li><a href="STAGES--EXPLOITATION.html">EXPLOITATION</a></li>
+</ol></div>
+<div class="page"><h1><b><u>KIOPTRIX</u></b></h1>netdiscover    ---pcs<br />nessus<br />nmap -T4 -p- 192.168.1.2<br />nmap -A -T4 -p22,80,111,139,443,32768 192.168.1.2<br />open port 80,443 high concern<br /><br />nikto<br /><br />dirbuster<br /><a href="file:///usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt">/usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt</a><br />mention files..php,sql,txt,tar,.....imp ones<br /><br />curl --head 192.168.43.106<br /><br />nmap --script=ssl-enum-ciphers -p 443 192.168.43.106<br /><br />searchsploit apache 1.3.20<br /><br />smbclient -L \\\\192.168.43.106<br />smbclient -L \\\\192.168.43.106\\IPC$ or ADMIN$<br /><img src="images/9-1.png" alt="images/9-1.png" /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div></div>
+</body></html>

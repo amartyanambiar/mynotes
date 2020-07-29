@@ -1,0 +1,22 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>AIRCRACK-ng</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong><a href="index.html">Index</a></strong></p>
+<p><a href="WIRELESS_NETWORK.html">WIRELESS NETWORK</a></p>
+
+<ol>
+<li><a href="WIRELESS_NETWORK--Wi-Fi_HACKING.html">Wi-Fi HACKING</a></li>
+<ol>
+<li><a href="WIRELESS_NETWORK--Wi-Fi_HACKING--AIRCRACK-ng.html">AIRCRACK-ng</a></li>
+<li><a href="WIRELESS_NETWORK--Wi-Fi_HACKING--MAC_SPOOFING.html">MAC SPOOFING</a></li>
+<li><a href="WIRELESS_NETWORK--Wi-Fi_HACKING--NETWORK_SNIFFER.html">NETWORK SNIFFER</a></li>
+<li><a href="WIRELESS_NETWORK--Wi-Fi_HACKING--DoS_ATTACK.html">DoS ATTACK</a></li>
+<li><a href="WIRELESS_NETWORK--Wi-Fi_HACKING--CRACKING.html">CRACKING</a></li>
+</ol></ol></div>
+<div class="page"><h1><b><u>AIRCRACK-ng</u></b></h1><strong>ifconfig </strong>  :interface configuration<br /><strong>iwconfig </strong> :wireless interface<br /><br /><strong>Aircrack-ng </strong>isnt a single tool. It is a suite of tools for manipulating and cracking networks.<br /><br /><strong>Packet Injection</strong>:<br />• Allows to intercept ,disrupt,manipulate network communication<br />• Used mostly in Man-in-middle and denial of service attacks<br />• Ex: sending a deauthentication packet to connect client will result in disconnecting from router<br /><br /><strong>airmon-ng start wlan0  </strong>   :monitor mode<br />*use <strong>airmon-ng stop wlan0mon</strong> , <strong>service network-manager restart</strong>   :stop monitor mode<br /><br /><strong>airmon-ng check kill   </strong>     :kill all processes to avoid interference<br /><img src="images/3-1.png" alt="images/3-1.png" /><br /><br /><br /><strong>airodump-ng wlan0mon </strong>                                                         :shows all networks present (even hidden)<br /><strong>airodump-ng -c 8 --bssid [****bssid****] wlan0mon  </strong>    : Check a specific network<br /><strong>aireplay-ng -0 20 -a [****bssid****] wlan0mon </strong>               :Sending de-auth packets ..so that clients reconnect<br /><br /><br /></div></div>
+</body></html>
