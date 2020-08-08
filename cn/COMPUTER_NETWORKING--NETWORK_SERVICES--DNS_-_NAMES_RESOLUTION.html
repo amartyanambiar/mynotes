@@ -1,0 +1,54 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>DNS - NAMES RESOLUTION</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="COMPUTER_NETWORKING.html">COMPUTER NETWORKING</a></p>
+
+<ol>
+<li><a href="COMPUTER_NETWORKING--INTRO.html">INTRO</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--INTRO--TCP-IP_Five_Layer_Model.html">TCP/IP Five Layer Model</a></li>
+<li><a href="COMPUTER_NETWORKING--INTRO--NETWORKING_DEVICES.html">NETWORKING DEVICES</a></li>
+<li><a href="COMPUTER_NETWORKING--INTRO--PHYSICAL_LAYER.html">PHYSICAL LAYER</a></li>
+<li><a href="COMPUTER_NETWORKING--INTRO--DATALINK_LAYER.html">DATALINK LAYER</a></li>
+</ol>
+<li><a href="COMPUTER_NETWORKING--NETWORK_LAYER.html">NETWORK LAYER</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--NETWORK_LAYER--IP.html">IP</a></li>
+<li><a href="COMPUTER_NETWORKING--NETWORK_LAYER--SUBNET.html">SUBNET</a></li>
+<li><a href="COMPUTER_NETWORKING--NETWORK_LAYER--ROUTING.html">ROUTING</a></li>
+</ol>
+<li><a href="COMPUTER_NETWORKING--TRANSPORT_&_APPLICATION_LAYER.html">TRANSPORT & APPLICATION LAYER</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--TRANSPORT_&_APPLICATION_LAYER--TRANSPORT_LAYER.html">TRANSPORT LAYER</a></li>
+<li><a href="COMPUTER_NETWORKING--TRANSPORT_&_APPLICATION_LAYER--CONTROL_FLAGS.html">CONTROL FLAGS</a></li>
+<li><a href="COMPUTER_NETWORKING--TRANSPORT_&_APPLICATION_LAYER--APPLICATION_LAYER.html">APPLICATION LAYER</a></li>
+<li><a href="COMPUTER_NETWORKING--TRANSPORT_&_APPLICATION_LAYER--ALL_TOGETHER.html">ALL TOGETHER</a></li>
+</ol>
+<li><a href="COMPUTER_NETWORKING--NETWORK_SERVICES.html">NETWORK SERVICES</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--NETWORK_SERVICES--DNS_-_NAMES_RESOLUTION.html">DNS - NAMES RESOLUTION</a></li>
+<li><a href="COMPUTER_NETWORKING--NETWORK_SERVICES--DHCP.html">DHCP</a></li>
+<li><a href="COMPUTER_NETWORKING--NETWORK_SERVICES--NAT.html">NAT</a></li>
+<li><a href="COMPUTER_NETWORKING--NETWORK_SERVICES--VPN.html">VPN</a></li>
+</ol>
+<li><a href="COMPUTER_NETWORKING--CONNECTING_TO_INTERNET.html">CONNECTING TO INTERNET</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--CONNECTING_TO_INTERNET--BROADBAND.html">BROADBAND</a></li>
+<li><a href="COMPUTER_NETWORKING--CONNECTING_TO_INTERNET--WAN.html">WAN</a></li>
+<li><a href="COMPUTER_NETWORKING--CONNECTING_TO_INTERNET--WIRELESS_NETWORKING.html">WIRELESS NETWORKING</a></li>
+</ol>
+<li><a href="COMPUTER_NETWORKING--TROUBLESHOOTING.html">TROUBLESHOOTING</a></li>
+<li><a href="COMPUTER_NETWORKING--MORE_ABOUT.html">MORE ABOUT</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--MORE_ABOUT--DNS.html">DNS</a></li>
+<li><a href="COMPUTER_NETWORKING--MORE_ABOUT--IPv6.html">IPv6</a></li>
+<li><a href="COMPUTER_NETWORKING--MORE_ABOUT--CLOUD.html">CLOUD</a></li>
+</ol></ol></div>
+<div class="page"><h1><b><u>DNS - NAMES RESOLUTION</u></b></h1><strong>DNS : DOMAIN NAME SYSTEM</strong><br />A global and highly distributed network service that resolves strings of letters into IP addresses for you.<br /><br /><strong>Domain Name :</strong> A term we use for something that can be resolved by DNS.<br /><br />Helps in geographically use ip addresses. Less traffic . Faster.<br /><br /><strong>Types</strong> :<br />1. Caching Name servers            : Used by ISP's   -&gt;  Purpose is to store known domain name lookups for a certain amount of time<br />2. Recursive Name servers         :Used by ISP's    -&gt;  Full DNS resolution requests<br />3. Root Name servers                 : 13 root servers  geographical locations<br />4. TLD Name servers                  :Top  level domain <br />5. Authoritative Name servers   :  serves actual ip<br /><br /><strong>Anycast</strong> : A technique that's used to route traffic to different destinations depending on factors like location, congestion, or link health<br /><br /><strong>DNS uses UDP instead of TCP.</strong><br />UDP is connectionless. No setup or teardown of connection. much less traffic.<br />Just takes 8 packets instead of 44 packets thru tcp.<br /><img src="images/13-1.png" alt="images/13-1.png" /><br /><br /><br />DNS...works with tcp too at few places...<br /><br /><br /><strong>Resource</strong> - <strong>Record</strong> <strong>types</strong>:<br /><strong><span style="text-decoration:underline;">A </span></strong><span style="text-decoration:underline;">record</span> : used to point a certain domain name at a certain IPv4 IP address.<br /><strong>DNS round robins </strong>: multiple IPs for domain name in cycle.<br /><br /><strong><span style="text-decoration:underline;">AAAA QUAD A </span></strong><span style="text-decoration:underline;">record </span>: returns IPv6 address.<br /><br /><strong><span style="text-decoration:underline;">CNAME</span></strong><span style="text-decoration:underline;"> record :</span> used to redirect traffic from one domain to another. microsoft.com -&gt; <a href="http://www.microsoft.com">www.microsoft.com</a><br /><br /><strong><span style="text-decoration:underline;">MX </span></strong><span style="text-decoration:underline;">record  (mail record) </span>: ensures mails get delivered to right mail server<br /><br /><strong><span style="text-decoration:underline;">SRV</span></strong><span style="text-decoration:underline;"> record (service record)</span> : used to define the location of very specific services . for CalDev..<br /><br /><strong><span style="text-decoration:underline;">TXT</span></strong><span style="text-decoration:underline;"> record</span> : used to convey info abt network for other computers to process. free form-. use it to communicate data..which doesnt use dns<br /><br /><br /><strong><span style="text-decoration:underline;">Anatomy of a Domain Name:</span></strong><br /><a href="http://www.google.com">www.google.com</a><br />www -&gt;  <strong>Sub Domain, Host Name</strong><br />.google -&gt; <strong>Domain</strong>   -&gt; used to demarcate where control moves from a TLD server to an authoritative server.<br />.com -&gt; <strong>TLD-top level domain</strong><br />All together : <strong>Fully Qualified Domain Name FQDN</strong> (255 characters)<br />Registrars - who sell unused domain names..partners with IANA.<br /><br /><strong>DNS ZONE:</strong><br />allows easier control over multiple parts of a domain.<br />zone files :SOA(declares zone name) NS records<br /><br /><br /><br /></div></div>
+</body></html>

@@ -1,0 +1,54 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>CONTROL FLAGS</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="COMPUTER_NETWORKING.html">COMPUTER NETWORKING</a></p>
+
+<ol>
+<li><a href="COMPUTER_NETWORKING--INTRO.html">INTRO</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--INTRO--TCP-IP_Five_Layer_Model.html">TCP/IP Five Layer Model</a></li>
+<li><a href="COMPUTER_NETWORKING--INTRO--NETWORKING_DEVICES.html">NETWORKING DEVICES</a></li>
+<li><a href="COMPUTER_NETWORKING--INTRO--PHYSICAL_LAYER.html">PHYSICAL LAYER</a></li>
+<li><a href="COMPUTER_NETWORKING--INTRO--DATALINK_LAYER.html">DATALINK LAYER</a></li>
+</ol>
+<li><a href="COMPUTER_NETWORKING--NETWORK_LAYER.html">NETWORK LAYER</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--NETWORK_LAYER--IP.html">IP</a></li>
+<li><a href="COMPUTER_NETWORKING--NETWORK_LAYER--SUBNET.html">SUBNET</a></li>
+<li><a href="COMPUTER_NETWORKING--NETWORK_LAYER--ROUTING.html">ROUTING</a></li>
+</ol>
+<li><a href="COMPUTER_NETWORKING--TRANSPORT_&_APPLICATION_LAYER.html">TRANSPORT & APPLICATION LAYER</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--TRANSPORT_&_APPLICATION_LAYER--TRANSPORT_LAYER.html">TRANSPORT LAYER</a></li>
+<li><a href="COMPUTER_NETWORKING--TRANSPORT_&_APPLICATION_LAYER--CONTROL_FLAGS.html">CONTROL FLAGS</a></li>
+<li><a href="COMPUTER_NETWORKING--TRANSPORT_&_APPLICATION_LAYER--APPLICATION_LAYER.html">APPLICATION LAYER</a></li>
+<li><a href="COMPUTER_NETWORKING--TRANSPORT_&_APPLICATION_LAYER--ALL_TOGETHER.html">ALL TOGETHER</a></li>
+</ol>
+<li><a href="COMPUTER_NETWORKING--NETWORK_SERVICES.html">NETWORK SERVICES</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--NETWORK_SERVICES--DNS_-_NAMES_RESOLUTION.html">DNS - NAMES RESOLUTION</a></li>
+<li><a href="COMPUTER_NETWORKING--NETWORK_SERVICES--DHCP.html">DHCP</a></li>
+<li><a href="COMPUTER_NETWORKING--NETWORK_SERVICES--NAT.html">NAT</a></li>
+<li><a href="COMPUTER_NETWORKING--NETWORK_SERVICES--VPN.html">VPN</a></li>
+</ol>
+<li><a href="COMPUTER_NETWORKING--CONNECTING_TO_INTERNET.html">CONNECTING TO INTERNET</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--CONNECTING_TO_INTERNET--BROADBAND.html">BROADBAND</a></li>
+<li><a href="COMPUTER_NETWORKING--CONNECTING_TO_INTERNET--WAN.html">WAN</a></li>
+<li><a href="COMPUTER_NETWORKING--CONNECTING_TO_INTERNET--WIRELESS_NETWORKING.html">WIRELESS NETWORKING</a></li>
+</ol>
+<li><a href="COMPUTER_NETWORKING--TROUBLESHOOTING.html">TROUBLESHOOTING</a></li>
+<li><a href="COMPUTER_NETWORKING--MORE_ABOUT.html">MORE ABOUT</a></li>
+<ol>
+<li><a href="COMPUTER_NETWORKING--MORE_ABOUT--DNS.html">DNS</a></li>
+<li><a href="COMPUTER_NETWORKING--MORE_ABOUT--IPv6.html">IPv6</a></li>
+<li><a href="COMPUTER_NETWORKING--MORE_ABOUT--CLOUD.html">CLOUD</a></li>
+</ol></ol></div>
+<div class="page"><h1><b><u>CONTROL FLAGS</u></b></h1><strong><span style="text-decoration:underline;">TCP CONTROL FLAGS:</span></strong><br /><strong>URG</strong> : (<em>urgent</em>) A value of one here indicates that the segment is considered urgent and the urgent pointer field has more data about this.<br /><strong>ACK</strong> : (<em>acknowledge</em>) A value of one in this field means that the acknowledgement number field should be examined.<br /><strong>PSH</strong> : (<em>push</em>) The transmitting device wants the recieving device to push currently-buffered data to the application on the recieving end as soon as possible.<br /><strong>RST</strong> : (<em>reset</em>) One of the sides in a TCP connection hasn't been able to properly recover from a series of missing or malformed segments.<br /><strong>SYN</strong> : (<em>synchronise</em>) It's used when first establishing a TCP connection and makes sure the recieving end knows to examine the sequence number field.<br /><strong>FIN</strong> : (finish) When this flag is set to a value 1, it means the transmitting computer doesn't have any more data to send and the connection can be closed.<br /><br /><strong>THE THREE WAY HANDSHAKE </strong>:<br /><img src="images/9-1.png" alt="images/9-1.png" /><br />Handshake : A way for two devices to ensure that they are speaking the same protocol .<br /><br /><strong>FOUR</strong> <strong>WAY</strong> <strong>HANDSHAKE</strong> :<br /><img src="images/9-2.png" alt="images/9-2.png" /><br /><br /><strong>SOCKET :</strong><br />The instantiation of an end-point in a potential TCP connection.<br /><strong>Socket</strong> <strong>state</strong>:<br /><strong>LISTEN</strong> - Ready and listening <br /><strong>SYN_SENT</strong> - Synchronisation has been sent but connection not established (client-side)<br /><strong>SYN_RECEIVED</strong> - A socket previously in listen state has received a synchronization req and sent back a SYN/ACK<br /><strong>ESTABLISHED</strong> - Connection UP<br /><strong>FIN_WAIT</strong> - FIN sent but ACK not received<br /><strong>CLOSE_WAIT</strong> - Application has been closed on TCP layer , but hasnt get relieved of that socket<br /><strong>CLOSE</strong> - Connection fully terminated<br /> <br /><br /><strong>Connection-oriented Protocol:</strong><br />Establishes a connection, and uses this to ensure that all data has been properly transmitted. like TCP<br /><br /><strong>Connection-less</strong> <strong>protocol</strong> : ex: UDP<br /><br /><strong>FIREWALL</strong>: <br />A device blocks traffic that meets certain criteria<br />Security<br /><img src="images/9-3.png" alt="images/9-3.png" /><br /><br /><br /></div></div>
+</body></html>
